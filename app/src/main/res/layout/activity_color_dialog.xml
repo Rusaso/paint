@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="izv.example.com.paint.ColorDialog">
+
+    <ImageButton
+        android:id="@+id/btNegro"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/btAzul"
+        android:layout_width="43dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btNegro"
+        app:layout_constraintStart_toEndOf="@+id/btNegro"
+        app:layout_constraintTop_toTopOf="@+id/btNegro"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@android:color/holo_blue_dark" />
+
+    <ImageButton
+        android:id="@+id/btRojo"
+        android:layout_width="51dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btAzul"
+        app:layout_constraintStart_toEndOf="@+id/btAzul"
+        app:layout_constraintTop_toTopOf="@+id/btAzul"
+        app:srcCompat="@android:color/holo_red_dark" />
+</android.support.constraint.ConstraintLayout>
